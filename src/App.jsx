@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import EveryPageScrollToTop from './components/common/EveryPageScrollToTop';
 import Footer from './components/layout/Footer';
 import Header from './components/layout/Header';
 import Main from './components/layout/Main';
@@ -13,6 +14,7 @@ import TermsCondition from './containers/TermsCondition';
 function App() {
     return (
         <BrowserRouter>
+            <EveryPageScrollToTop />
             <Header />
             <Routes>
                 <Route path='/' element={<Main />}>
