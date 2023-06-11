@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 export default function Footer() {
     return (
@@ -8,29 +9,23 @@ export default function Footer() {
                     <div className="py-8 grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 laptop:gap-6 space-y-16 laptop:space-y-0 laptop:items-center">
                         <div className="grid grid-cols-1 tablet:col-span-2 laptop:col-auto gap-8 place-items-center laptop:place-items-start">
                             <Link to="/" aria-label="home">
-                                <img className="w-56" src="/src/assets/logo.png" alt="logo" />
+                                <img className="w-56" src={logo} alt="logo" />
                             </Link>
                             <p className="text-center laptop:text-left max-w-[45ch] laptop:max-w-fit">Desh Career is Career based newsletter in Bengali language. This newsletter has published weekly. This is published in every Saturday at 12.00 PM. </p>
                             <ul className="flex gap-4 items-center" role="list" aria-label="social links">
-                                <li className="hover:text-slate-400 transition-colors">
+                                <li className="hover:text-white transition-colors">
                                     <Link aria-label="facebook" to="https://www.facebook.com/deshcareer">
-                                        <svg className="social-icon social-icon-footer">
-                                            <use href="/src/assets/social-icons.svg#facebook"></use>
-                                        </svg>
+                                        <i className="fa-brands fa-facebook fa-2xl"></i>
                                     </Link>
                                 </li>
-                                <li className="hover:text-slate-400 transition-colors">
+                                <li className="hover:text-white transition-colors">
                                     <Link aria-label="youtube" to="https://www.youtube.com/channel/UCQB33GJ0C3pL3IpxpVFQS2Q">
-                                        <svg className="social-icon social-icon-footer">
-                                            <use href="/src/assets/social-icons.svg#youtube"></use>
-                                        </svg>
+                                        <i className="fa-brands fa-youtube fa-2xl"></i>
                                     </Link>
                                 </li>
-                                <li className="hover:text-slate-400 transition-colors">
+                                <li className="hover:text-white transition-colors">
                                     <Link aria-label="linkedin" to="https://www.linkedin.com/company/deshcareer/">
-                                        <svg className="social-icon social-icon-footer">
-                                            <use href="/src/assets/social-icons.svg#linkedin-in"></use>
-                                        </svg>
+                                        <i className="fa-brands fa-linkedin-in fa-2xl"></i>
                                     </Link>
                                 </li>
                             </ul>

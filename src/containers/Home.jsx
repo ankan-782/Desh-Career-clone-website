@@ -1,4 +1,6 @@
 import Input from "../components/common/Input";
+import envelope from "../assets/envelope-regular.svg";
+import earth from "../assets/earth.svg";
 
 export default function Home() {
     return (
@@ -9,7 +11,7 @@ export default function Home() {
                     <p>Get the <span className="font-bold">5-minute newsletter</span> keeping about smart career</p>
                     <div className="p-4 grid grid-cols-[1.5rem_1fr] gap-4 mobile-md:grid-cols-[1.5rem_1fr_max-content] items-center shadow-lg rounded-lg">
                         <div>
-                            <img src="/src/assets/envelope-regular.svg" alt="email input box" />
+                            <img src={envelope} alt="email input box" />
                         </div>
                         <Input type="email" placeholder="Your Email Address" />
                         <button className="bg-[#dc3545] text-white px-3 py-2 rounded col-span-2 mobile-md:col-span-1">Join Free</button>
@@ -17,7 +19,7 @@ export default function Home() {
                     <p>We are committed to your privacy. DashCareer uses the information you provide to contact you about our relevant content and services. You may unsubscribe from these communications at any time. For more information, check out our Privacy Policy.</p>
                 </div>
                 <div>
-                    <img src="/src/assets/earth.svg" alt="homepage hero image" />
+                    <img src={earth} alt="homepage hero image" />
                 </div>
             </div>
         </section>

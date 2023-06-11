@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import address from "../assets/address.svg";
 
 export default function AboutUs() {
     return (
@@ -19,7 +20,7 @@ export default function AboutUs() {
                     <h3 className="text-2xl font-bold after:content-['\201D'] before:content-['\201C'] p-6 shadow-md rounded-lg w-fit italic">We focus on Career trend, news, smart job etc.</h3>
                 </div>
                 <div>
-                    <img src="/src/assets/address.svg" className="mobile-lg:max-w-md laptop:max-w-lg" alt="about us address image" />
+                    <img src={address} className="mobile-lg:max-w-md laptop:max-w-lg" alt="about us address image" />
                 </div>
             </div>
         </div>

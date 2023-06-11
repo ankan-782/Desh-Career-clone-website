@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import advertisement from "../assets/advertisement.svg";
 
 export default function Advertisement() {
     return (
@@ -15,7 +16,7 @@ export default function Advertisement() {
                     <h3 className="text-2xl font-bold after:content-['\201D'] before:content-['\201C'] p-6 shadow-md rounded-lg w-fit italic">We focus on Career related content.</h3>
                 </div>
                 <div>
-                    <img src="/src/assets/advertisement.svg" className="mobile-lg:max-w-md laptop:max-w-lg" alt="advertisement image" />
+                    <img src={advertisement} className="mobile-lg:max-w-md laptop:max-w-lg" alt="advertisement image" />
                 </div>
             </div>
         </div>
