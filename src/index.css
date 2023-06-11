@@ -24,6 +24,14 @@
     }
 
     .social-icon {
-        @apply fill-white aspect-square hover:fill-slate-400 w-8 transition-colors;
+        @apply aspect-square w-8 transition-colors;
+    }
+
+    .social-icon-footer {
+        @apply fill-white hover:fill-slate-400;
+    }
+
+    .social-icon-contact-us {
+        @apply fill-black hover:fill-black/50;
     }
 }

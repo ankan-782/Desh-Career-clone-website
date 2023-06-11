@@ -14,21 +14,21 @@ export default function Footer() {
                             <ul className="flex gap-4 items-center" role="list" aria-label="social links">
                                 <li className="hover:text-slate-400 transition-colors">
                                     <Link aria-label="facebook" to="https://www.facebook.com/deshcareer">
-                                        <svg className="social-icon">
+                                        <svg className="social-icon social-icon-footer">
                                             <use href="/src/assets/social-icons.svg#facebook"></use>
                                         </svg>
                                     </Link>
                                 </li>
                                 <li className="hover:text-slate-400 transition-colors">
                                     <Link aria-label="youtube" to="https://www.youtube.com/channel/UCQB33GJ0C3pL3IpxpVFQS2Q">
-                                        <svg className="social-icon">
+                                        <svg className="social-icon social-icon-footer">
                                             <use href="/src/assets/social-icons.svg#youtube"></use>
                                         </svg>
                                     </Link>
                                 </li>
                                 <li className="hover:text-slate-400 transition-colors">
                                     <Link aria-label="linkedin" to="https://www.linkedin.com/company/deshcareer/">
-                                        <svg className="social-icon">
+                                        <svg className="social-icon social-icon-footer">
                                             <use href="/src/assets/social-icons.svg#linkedin-in"></use>
                                         </svg>
                                     </Link>
