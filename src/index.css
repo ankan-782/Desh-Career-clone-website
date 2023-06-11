@@ -3,13 +3,27 @@
 @tailwind utilities;
 
 @layer components {
+    .main-section-area {
+        @apply pt-[40px] tablet:pt-[70px] laptop:pt-[210px] pb-[1050px] tablet:pb-[770px] laptop:pb-[550px];
+    }
+
+    .header-nav-collapsed {
+        @apply data-[overlay=true]:relative data-[overlay=true]:z-50 before:data-[overlay=true]:content-[''] before:data-[overlay=true]:fixed before:data-[overlay=true]:inset-0 before:data-[overlay=true]:bg-gradient-to-b before:data-[overlay=true]:from-black/5 before:data-[overlay=true]:to-black/80;
+    }
+
+    .header-nav-expanded {
+        @apply laptop:fixed laptop:top-0 laptop:left-0 laptop:z-30 laptop:bg-white laptop:w-full laptop:shadow-md laptop:before:data-[overlay=true]:content-none;
+    }
+
+    .header-nav-list-collapsed {
+        @apply data-[visible=true]:block fixed top-20 inset-x-5 bottom-auto shadow-sm rounded mx-auto max-w-3xl;
+    }
+
+    .header-nav-list-expanded {
+        @apply hidden laptop:static laptop:block laptop:ml-auto laptop:mx-0 laptop:max-w-none laptop:rounded-none laptop:shadow-none;
+    }
+
     .social-icon {
         @apply fill-white aspect-square hover:fill-slate-400 w-8 transition-colors;
-    }
-}
-
-@layer utilities {
-    .main-height {
-        min-height: calc(100vh - 442.66px - 24px);
     }
 }

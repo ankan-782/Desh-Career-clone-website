@@ -16,14 +16,14 @@ export default {
         },
         container: {
             center: true,
-            padding: '2rem',
+            padding: '1rem',
         },
         extend: {
             container: {
                 screens: {
                     '4K': '1440px',
                 }
-            }
+            },
         },
     },
     plugins: [],
