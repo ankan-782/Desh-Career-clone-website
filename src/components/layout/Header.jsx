@@ -15,14 +15,14 @@ export default function Header() {
     }
 
     return (
-        <header data-overlay={navOverlay} className="py-4 header-nav-collapsed header-nav-expanded">
+        <header data-overlay={navOverlay} className="py-4 header-nav-larger-device header-nav-smaller-device">
             <div className="container">
                 <div className="flex justify-between items-center">
                     <Link to="/" aria-label="home">
                         <img className="w-32 laptop:w-56" src={logo} alt="logo" />
                     </Link>
-                    <nav data-visible={navVisible} aria-label="header-navigation" className="p-8 laptop:p-0 bg-white  header-nav-list-collapsed header-nav-list-expanded">
-                        <ul onClick={() => { setNavVisible(false); setNavOverlay(false); }} className="flex flex-col laptop:flex-row gap-6 items-center justify-center text-lg font-semibold">
+                    <nav data-visible={navVisible} aria-label="header-navigation" className="p-8 laptop:p-0 bg-white header-nav-list-collapsed header-nav-list-expanded">
+                        <ul className="flex flex-col laptop:flex-row gap-6 items-center justify-center text-lg font-semibold">
                             <li>
                                 <Link className={`${location.pathname === '/' ? 'text-[#dc3545]' : 'text-black'} hover:text-[#dc3545] transition-colors`} to="/">Home</Link>
                             </li>

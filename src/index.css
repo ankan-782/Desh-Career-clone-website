@@ -7,19 +7,19 @@
         @apply pt-[40px] tablet:pt-[70px] laptop:pt-[210px] pb-[1050px] tablet:pb-[770px] laptop:pb-[550px];
     }
 
-    .header-nav-collapsed {
+    .header-nav-smaller-device {
         @apply data-[overlay=true]:relative data-[overlay=true]:z-50 before:data-[overlay=true]:content-[''] before:data-[overlay=true]:fixed before:data-[overlay=true]:inset-0 before:data-[overlay=true]:bg-gradient-to-b before:data-[overlay=true]:from-black/5 before:data-[overlay=true]:to-black/80;
     }
 
-    .header-nav-expanded {
+    .header-nav-larger-device {
         @apply laptop:fixed laptop:top-0 laptop:left-0 laptop:z-30 laptop:bg-white laptop:w-full laptop:shadow-md laptop:before:data-[overlay=true]:content-none;
     }
 
-    .header-nav-list-collapsed {
+    .header-nav-list-expanded {
         @apply data-[visible=true]:block fixed top-20 inset-x-5 bottom-auto shadow-sm rounded mx-auto max-w-3xl;
     }
 
-    .header-nav-list-expanded {
+    .header-nav-list-collapsed {
         @apply hidden laptop:static laptop:block laptop:ml-auto laptop:mx-0 laptop:max-w-none laptop:rounded-none laptop:shadow-none;
     }
 }
