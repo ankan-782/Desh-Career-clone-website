@@ -15,6 +15,11 @@
 
 ## Overview
 
+### Links
+
+- Solution URL: [github link](https://github.com/ankan-782/Desh-Career-clone-website)
+- Live Site URL: [live site link](https://deshcareer-rav.netlify.app/)
+
 ### The challenge
 
 Users should be able to:
@@ -66,11 +71,6 @@ npm run dev
 ![screenshot 3](./src/assets/screenshots/small-device.png)
 
 ![screenshot 4](./src/assets/screenshots/mobile-menu-small-device.png)
-
-### Links
-
-- Solution URL: [github link](https://github.com/ankan-782/Desh-Career-clone-website)
-- Live Site URL: [live site link](https://deshcareer-rav.netlify.app/)
 
 ## My process
 
