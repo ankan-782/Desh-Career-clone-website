@@ -47,6 +47,12 @@ cd Desh-Career-clone-website
 npm install
 ```
 
+- run the project:
+
+```bash
+npm run dev
+```
+
 ### Screenshot
 
 - in larger devices
