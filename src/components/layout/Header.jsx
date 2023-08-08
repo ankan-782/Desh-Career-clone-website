@@ -43,13 +43,13 @@ export default function Header() {
                             </li>
                             <li>
                                 <form onSubmit={(e) => { e.preventDefault(); alert("You have joined"); }} className="block laptop:hidden">
-                                    <Button type="submit" />
+                                    <Button type="submit">Join Now</Button>
                                 </form>
                             </li>
                         </ul>
                     </nav>
                     <form onSubmit={(e) => { e.preventDefault(); alert("You have joined"); }} className="hidden laptop:block">
-                        <Button type="submit" />
+                        <Button type="submit">Join Now</Button>
                     </form>
                     <button onClick={navToggle} className="block laptop:hidden fixed right-4 z-40 bg-[url('/src/assets/hamburger.svg')] aria-[expanded=true]:bg-[url('/src/assets/close.svg')] bg-no-repeat bg-contain bg-center w-10 h-10" aria-controls="header-navigation"
                         aria-expanded={navVisible}>

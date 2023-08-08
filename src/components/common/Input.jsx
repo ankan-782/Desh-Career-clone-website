@@ -1,5 +1,5 @@
-export default function Input({ type, placeholder }) {
+export default function Input({ ...attributes }) {
     return (
-        <input className="focus:outline-none" type={type} placeholder={placeholder} />
+        <input className="focus:outline-none" {...attributes} />
     );
 }
